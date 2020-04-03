@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>If Koşul Yapısı</title>
+<style>
+
+body{
+margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    padding: 0;
+
+    width: 25%
+
+    background-color: #E0E0E0;
+
+    position: fixed;
+
+    height: 100%
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+
+    color: #000000;
+
+    padding: 16px 15px;
+
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #212121;
+
+    color: white;
+}
+li a:hover:not(.active){
+    background-color:#EC407A;
+
+    color: white;
+}
+</style>
+</head> 
+<body>
+<header>
+<ul>
+<li><a href='Odev.html'>JavaScript Giriş </a></li>
+<li><a href='YazılımYapısı.html'>JavaScript Yazılım Yapısı</a></li>
+<li><a href='Degiskenler.html'>Değişkenler</a></li>
+<li><a href='Operatorler.html'>Operatörler</a></li>
+<li><a href='Aritmetik.html'>Aritmetik</a></li>
+<li><a href='VeriTipleri.html'>Veri Tipleri</a></li>
+<li><a href='Olaylar.html'>Olaylar</a></li>
+<li><a href='Stringler.html'>Stringler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+<li><a class="active" href ="ksl">İf Koşul Yapıları</a></li>
+<li><a href='Donguler.html'>Döngüler</a></li>
+<li><a href='TipDonusum.html'>Tip Dönüşümleri</a></li>
+<li><a href='Fonksiyon.html'>Fonksiyonlar</a></li>
+<li><a href='Calısma.html'>Çalışma Yapısı ve Genel Mimarisi</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px; height:1000px;">
+<h1> <font color='#00BFA5'>JavaScript Koşul Yapıları</font></h1>
+<p>Farklı durumlarda farklı işlemler yapmak gerekebilir. Bu durumların tespit edilmesi için koşul ifadeleri bize yardımcı olur.</p>
+<p>Şartların sağlanıp sağlanılmadığını tespit ederken standart üç ifade kullanılır. Bunlar if, else if ve else'dir</p>
+
+<ol>
+<li>if ( koşul sağlanıyorsa ) { şunları yap }</li>
+<li>else if ( koşul sağlanıyorsa ) { şunları yap }</li>
+<li>else { şunları yap }</li>
+</ol>
+<p>Koşul oluştururken mutlaka IF ile başlanır. Parantez içinde koşul belirtilir ve yapılacaklar kıvrımlı parantez içinde yazılır.</p>
+<p>ELSE IF kullanmak için öncelikle IF kullanmış olmak gereklidir. Yani IF kullanmadan ELSE IF ile bir kontrol yapılamaz. "O olmadı bari bunu dene" anlamı taşır.</p>
+<p>ELSE kullanırken parantez açılmaz ve koşul yazılmaz. ELSE, diğer tüm if ve else ifler çalışmadıysa, yani hiçbir koşul sağlanılamadıysa yapılacak şeyi belirtir.
+</p>
+
+</header>
+</body> 
+</html>

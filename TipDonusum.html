@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Tip Dönüşümleri</title>
+<style>
+
+body{
+margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    padding: 0;
+
+    width: 25%
+
+    background-color: #E0E0E0;
+
+    position: fixed;
+
+    height: 100%
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+
+    color: #000000;
+
+    padding: 16px 15px;
+
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #212121;
+
+    color: white;
+}
+li a:hover:not(.active){
+    background-color:#EC407A;
+
+    color: white;
+}
+</style>
+</head> 
+<body>
+<header>
+<ul>
+<li><a href='Odev.html'>JavaScript Giriş </a></li>
+<li><a href='YazılımYapısı.html'>JavaScript Yazılım Yapısı</a></li>
+<li><a href='Degiskenler.html'>Değişkenler</a></li>
+<li><a href='Operatorler.html'>Operatörler</a></li>
+<li><a href='Aritmetik.html'>Aritmetik</a></li>
+<li><a href='VeriTipleri.html'>Veri Tipleri</a></li>
+<li><a href='Olaylar.html'>Olaylar</a></li>
+<li><a href='Stringler.html'>Stringler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+<li><a href='IfKosul.html'>İf Koşul Yapıları</a></li>
+<li><a href='Donguler.html'>Döngüler</a></li>
+<li><a class="active" href ="tp">Tip Dönüşümleri</a></li>
+<li><a href='Fonksiyon.html'>Fonksiyonlar</a></li>
+<li><a href='Calısma.html'>Çalışma Yapısı ve Genel Mimarisi</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px; height:1000px;">
+<h2>JavaScript Tip Dönüşümleri</h2>
+<p>Javascript dinamik bir dildir. Bunun anlamı, bir değişken tanımlanırken, veri tipini belirtme zorunluluğunun olmamasıdır. Buda bir değişkenin veri tipinin kodun çalışması esnasında ihtiyaç olunan veri tipe otomatik dönüştürülmesi anlamına gelir.</p>
+<p><b>sayi.toString() </b></p>
+<p>Sayıyı String ifadeye çevirir (Number to String).</p>
+<p><b>parseInt(string) :</b></p>
+<p>String olarak gönderilen metinsel değeri sayıya çevirir. String ifadesinde ondalık sayi var ise onu siler (String to Number).</p>
+<p><b>parseFloat(string)</b></p>
+<p>String olarak gönderilen metinsel değeri sayayı çevirir. Ondalık ifade aynen döndürülür (String to Number).</p>
+<p><b>array.toString():</b></p>
+<p>Array olarak tanımlanan bir değişkeni string ifadeye çevirir (Array to String).</p>
+<p><b>string.split(karakter):</b></p>
+<p>String olarak tanımlanmış bir ifade belirtilen karakterin içindeki geçtiği yerlerden array ifadeye çevirir (String to Array).</p>
+<p><b>json.stringify() :</b></p>
+<p>Object olarak tanımlanan karakter veya sayısal nesneyi string ifadeye çevirir (JSON to String).</p>
+<p><b>json.parse(string):</b></p>
+<p>String olarak tanımlanan metinsel JSON değerleri JSON nesnesine çevirir (String to JSON veya parse JSON).</p>
+<p><b></b></p>
+<p></p>
+</header>
+</body> 
+</html>

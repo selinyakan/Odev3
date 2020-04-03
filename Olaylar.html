@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Olaylar</title>
+<style>
+
+body{
+margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    padding: 0;
+
+    width: 25%
+
+    background-color: #E0E0E0;
+
+    position: fixed;
+
+    height: 100%
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+
+    color: #000000;
+
+    padding: 16px 15px;
+
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #212121;
+
+    color: white;
+}
+li a:hover:not(.active){
+    background-color:#EC407A;
+
+    color: white;
+}
+</style>
+</head> 
+<body>
+<header>
+<ul>
+<li><a href='Odev.html'>JavaScript Giriş </a></li>
+<li><a href='YazılımYapısı.html'>JavaScript Yazılım Yapısı</a></li>
+<li><a href='Degiskenler.html'>Değişkenler</a></li>
+<li><a href='Operatorler.html'>Operatörler</a></li>
+<li><a href='Aritmetik.html'>Aritmetik</a></li>
+<li><a href='VeriTipleri.html'>Veri Tipleri</a></li>
+<li><a class="active" href ="#grs">Olaylar</a></li>
+<li><a href='Stringler.html'>Stringler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+<li><a href='IfKosul.html'>İf Koşul Yapıları</a></li>
+<li><a href='Donguler.html'>Döngüler</a></li>
+<li><a href='TipDonusum.html'>Tip Dönüşümleri</a></li>
+<li><a href='Fonksiyon.html'>Fonksiyonlar</a></li>
+<li><a href='Calısma.html'>Çalışma Yapısı ve Genel Mimarisi</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px; height:1000px;">
+<h1><font color='#C2185B'>JavaScript Olaylar (Events)</font></h1>
+<p>JavaScript'in en büyük amacı, sayfamızda bir olay gerçekleştiğinde istediğimiz işlemleri gerçekleştirebilmemizi sağlamaktır. Bunu sağlamak için sayfada gerçekleşebilecek olaylara birer isim verilmiştir. İstenilen olay karşısında bir javascript fonksiyonunu çağırıp, ilgili işlemleri yaptırabiliriz.</p>
+<p><b>onClick</b></p>
+<p>Elemana tıklanması olayıdır.</p>
+<p><b>onDblClick</b></p>
+<p>Elemanın yüklenmesi olayıdır. Bu sayfanın kendisi olabileceği gibi bir resim ya da frame de olabilir. Sayfa yüklendiğinde direk çalışması istenen bir fonksiyon varsa bu olay ile çağrılabilir</p>
+<p><b>onUnLoad</b></p>
+<p>Tarayıcıda açık haldeki sayfanın terkedilmesi olayıdır. Bu pencerenin kapatılmasıyla olabileceği gibi bir linke tıklayarak başka bir sayfaya geçilmesi de olabilir.</p>
+<p><b>onFocus</b></p>
+<p>Bir elemanın seçilerek odaklanılması olayıdır. Örneğin bir metin kutusuna tıklandığında kontrol o kutuya geçer ve kutu aktif olur. Bir sonraki konuda bununla ilgili bir örnek bulunmaktadır.</p>
+<p><b>onBlur</b></p>
+<p>Aktif haldeki elemanın terk edilmesi olayıdır. Örneğin bir metin kutusu aktifken, başka bir yere tıklanarak kutudan çıkıldığında blur olayı meydana gelmiş olur.</p>
+<p><b>onMouseOver</b></p>
+<p>Fare ile elemanın üzerine gelinmesi olayıdır.</p>
+<p><b>onMouseOut</b></p>
+<p>Fare imlecinin elemanın üzerinden çekilmesi olayıdır.</p>
+<p><b>onMouseMove</b></p>
+<p>Fare imlecinin, eleman üzerinde hareket ettirilmesi olayıdır.</p>
+<p><b>onMouseDown</b></p>
+<p>Fare sol tuşunun eleman üzerindeyken basılması olayıdır. Tuş aşağıya indiği anda ilgili fonksiyon çalışır.</p>
+<p><b>onMouseUp</b></p>
+<p>Fare sol tuşunun eleman üzerindeyken basılıp bırakılması olayıdır. Fare tuşu aşağıdayken çalışmaz, tuş bırakıldığında çalışır.</p>
+<p><b>onKeyDown</b></p>
+<p>Klavyeden bir tuşa basılması olayıdır. Basılan tuşun ASCII kodu Event.keyCode özelliği ile öğrenilebilir. String.fromCharCode metodu ise okunan karakter kodunu tuşun ismine çevirebilir.</p>
+<p><b>onSelect</b></p>
+<p>Bir metin kutusu içindeki metnin seçilmesi olayıdır.</p>
+<p><b>onResize</b></p>
+<p>Tarayıcı penceresinin boyutunun değiştirilmesi olayıdır.</p>
+
+</header>
+
+</body> 
+</html>

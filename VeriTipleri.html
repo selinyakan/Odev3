@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Veri Tipleri</title>
+<style>
+
+body{
+margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    padding: 0;
+
+    width: 25%
+
+    background-color: #E0E0E0;
+
+    position: fixed;
+
+    height: 100%
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+
+    color: #000000;
+
+    padding: 16px 15px;
+
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #212121;
+
+    color: white;
+}
+li a:hover:not(.active){
+    background-color:#EC407A;
+
+    color: white;
+}
+</style>
+</head> 
+<body>
+<header>
+<ul>
+<li><a href ='Odev.html'>JavaScript Giriş </a></li>
+<li><a href='YazılımYapısı.html'>JavaScript Yazılım Yapısı</a></li>
+<li><a href='Degiskenler.html'>Değişkenler</a></li>
+<li><a href='Operatorler.html'>Operatörler</a></li>
+<li><a href='Aritmetik.html'>Aritmetik</a></li>
+<li><a class="active" href="#vrtp">Veri Tipleri</a></li>
+<li><a href='Olaylar.html'>Olaylar</a></li>
+<li><a href='Stringler.html'>Stringler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+<li><a href='IfKosul.html'>İf Koşul Yapıları</a></li>
+<li><a href='Donguler.html'>Döngüler</a></li>
+<li><a href='TipDonusum.html'>Tip Dönüşümleri</a></li>
+<li><a href='Fonksiyon.html'>Fonksiyonlar</a></li>
+<li><a href='Calısma.html'>Çalışma Yapısı ve Genel Mimarisi</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px; height:1000px;">
+<h1><font color='#1E88E5'>JavaScript Veri Tipleri</font></h1>
+<p>JavaScript dilinde birçok değişken türü bulunur.  Bu değişken türleri içerisinde birçok veri tipi saklayabilir. Bu veri tiplerinden bazıları; sayısal, metin, mantıksal, dizeler ve objelerdir.</p>
+<h3>String Veri Tipi(Metin)</h3>
+<p>String veri tipi içerisinde metinsel ifadeleri saklar. String veriler değişkenlere girilirken (“) tırnak işareti ya da (‘) kesme işareti kullanılır.</p>
+<p>var isim=”lifeacode”;  // doğru kullanım</p>
+<p>var soyisim=’egitim sitesi’;  // doğru kullanım</p><br><br>
+<h3>Number Veri Tipi(Sayısal)</h3>
+<p>Numbers veri tipi içerisinde sayısal değerleri tutmak için kullanılır. Değerler tanımlanırken (“) çift tırnak veya (‘) tek tırnak işaretine ihtiyaç yoktur.</p>
+<p>var a=1;   // doğru kullanım</p>
+<p>var pi=3.14;   // doğru kullanım ondalıklı sayı</p><br><br>
+<h3>Boolean Veri Tipi(Mantıksal)</h3>
+<p>Bazı ifadeler sadece iki alternatiflidir. İfade ya doğrudur(true) ya da yanlıştır(false). Bu tip değişkenlere boolean ifadeler ismi verilir. Mantıksal veriler koşul gerektiren ifadeler için kullanılır.</p>
+<p>var a = true;  // doğru kullanım</p>
+<h3>Array Verisi(Dizi)</h3>
+<p>Dizi bir veri tipinde birden fazla değer içerir. Dizi oluşturulurken köşeli parantez kullanılır ve değerler (,) ile ayrılır.</p>
+<p>var sehir=[“İstanbul”,” Ankara”, ”İzmir”];  // Yazı dizisi</p>
+<p>var sayi=[ 11111, 222222, 333333];   // Sayı dizisi</p>
+<h3>Veri İkilileri (Nesneler)</h3>
+<p>Nesneler alt değişken verilerini içerisinde tutar. Alt değişkenler sıralanırken kıvrım parantezler kullanılır. Değişkenler virgüllerle ayrılarak yazılır.</p>
+<p>var site = {  isim:”lifeacode”, içerik:”eğitim” };   // doğru kullanım</p><br><br>
+<h3>Boş ve Tanımsız Veriler( Undefined & Null )</h3>
+<p>JavaScript dilinde değer içermeyen değişkenler bulunur. Bu değişkenler veri içermezler. Veri içermeyen değişken oluşturulurken var degişken seklinde oluşturulur. Yani sadece değişken ismi yazılır. (=) eşittir operatörü kullanılmaz.</p>
+<p>var sehir;   // doğru kullanım, sehir değişkeni veri içermez.</p>
+<p>Bazı durumlarda değişkenin içerisinde bulunan verinin silinmesi gerekir. Bunun için Null ifadesi kullanılır.</p>
+<p>sehir = null;  // doğru kullanım, sehir değişkeninin içerisindeki veri silinir.</p><br><br>
+<h3>Veri Türünü Tespit Etmek (typeof)</h3>
+<p>Typeof operatörü kullanılarak bir değişkenin türü sorgulanabilir.</p>
+<p>typeof “lifeacode”   //string</p>
+<p>typeof “123”   //number</p>
+<p>typeof true   //boolean</p><br><br>
+<h3>Değişkenin Veri Türünü Değiştirmek</h3>
+<p>JavaScript veri türleri yeni değerler atanarak kolayca değiştirilebilir. Aşağıda a değişkeni içerisinde bulunan değer yeni bir değer almıştır.</p>
+<p>var a = // tanımsız değer</p>
+<p>var a= “lifeacode” // a string bir değer aldı.</p>
+<p>Var a= 2018 // a sayısal bir değer aldı.</p>
+</header>
+</body> 
+</html>

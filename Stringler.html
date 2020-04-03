@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Stringler,Sayılar,Diziler</title>
+<style>
+
+body{
+margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    padding: 0;
+
+    width: 25%
+
+    background-color: #E0E0E0;
+
+    position: fixed;
+
+    height: 100%
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+
+    color: #000000;
+
+    padding: 16px 15px;
+
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #212121;
+
+    color: white;
+}
+li a:hover:not(.active){
+    background-color:#EC407A;
+
+    color: white;
+}
+</style>
+</head> 
+<body>
+<header>
+<ul>
+<li><a href='Odev.html'>JavaScript Giriş </a></li>
+<li><a href='YazılımYapısı.html'>JavaScript Yazılım Yapısı</a></li>
+<li><a href='Degiskenler.html'>Değişkenler</a></li>
+<li><a href='Operatorler.html'>Operatörler</a></li>
+<li><a href='Aritmetik.html'>Aritmetik</a></li>
+<li><a href='VeriTipleri.html'>Veri Tipleri</a></li>
+<li><a href='Olaylar.html'>Olaylar</a></li>
+<li><a class="active" href ="#strng">Stringler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+<li><a href='IfKosul.html'>İf Koşul Yapıları</a></li>
+<li><a href='Donguler.html'>Döngüler</a></li>
+<li><a href='TipDonusum.html'>Tip Dönüşümleri</a></li>
+<li><a href='Fonksiyon.html'>Fonksiyonlar</a></li>
+<li><a href='Calısma.html'>Çalışma Yapısı ve Genel Mimarisi</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px; height:1000px;">
+<h2>JavaScript Metin Verileri</h2>
+<p>JavaScript dilinde string ifadeleri tek tırnak veya çift tırnak içerisine yazılır. Aşağıda string bir örnek tanımlayalım.</p>
+<p>var isim="lifeacode";</p><br><br>
+<p>Metin verisi içerisinde bulunan herhangi bir karaktere, karakter sırasının bir düşük sayısı köşeli parantez içerisinde yazılarak erişilir. Örneğin yukarıda “lifacode” değerinde “l” harfine ulaşmak için [0] ifadesi kullanılır. Aşağıda bir örnekle inceleyelim.</p>
+<p>var isim="lifeacode";</p>
+<p>var karakter = isim[0];    // "l" karakterini belirtir.</p><br><br>
+<p>Metin değişkenleri tanımlanırken kesme işareti içerisine tırnak veya tırnak işareti içerisine kesme işareti kullanabilir. Aşağıdaki örneği inceleyebilirsiniz:</p>
+<p>var isim="İstanbul'un en büyük semtindeyiz."</p>
+<p>var isim='Yaşadığım yer "İstanbul" dur.'; </p><br><br>
+<p>Yukarıdaki işlemi yapmak yerine kaçış işaretleri de kullanılabilir.</p>
+<p>var isim="İstanbul\'un en büyük semtindeyiz."; </p><br><br>
+<h3>JavaScript Length(Metin Verileri) Kullanımı</h3>
+<p>Değişkenden sonra .length yazarak değişkende bulunan değerin karakter uzunluğu öğrenilir.  Metinsel verilerde .length özelliği kullanılır.</p>
+<p>var sehir="İstanbul";</p>
+<p>var karakter = sehir.length;   // Şehir değişkeninin değerinin karakter uzunluğunun 8 olduğunu belirtir.</p>
+
+<h3>Değişken İçerisinde Kelime Bulmak</h3>
+<p>Metinsel bir değer içerisinde geçen bir yazının ilk bulunduğu yer indexOf() yöntemi ile bulunur.</p><br><br>
+<p>var bilgi="Lifeacode eğitim sitesi platformudur.";</p>
+<p>ilksozcuk=bilgi.indexOf("bir");  //konumun değri 10 olur.</p><br><br>
+<h2>JavaScript Sayısal Veriler</h2>
+<p>JavaScript dilinde sayılar tamsayı ya da ondalıklı sayı şeklinde yazılabilir. Sayıları üslü sayı şeklinde de yazabiliriz. Bunun için üs miktarının önüne e harfi yazılır.</p>
+<p>var sayi1 = 3.14;</p>
+<p>var sayi1 = 5;</p>
+<p>var a = 54e4; // 540000</p>
+<p>var b = 23e-4; // 0. 023</p><br><br>
+<p>Ayrıca toString() yöntemi vardır ki değişkenler üzerinde kullanılarak sayıyı farklı sayı sistemlerine göre yazar. Örneğin toString(2) ikilik sistemde değişkene değer verir. Sayı içeren bir değişkenin sonsuz olduğunu İnfinity ya da sayı olmadığını NaN özel karakterleri gösterir. Örnek verecek olursak herhangi bir sayıyı 0’a bölersek sonuç tanımsız yani NaN olur. Başka bir örnek verecek olursak da 1.000.000 sayısını sürekli kendi ile çarparsak sonuç belli bir süre sonra İnfinity olur.</p>
+<p>var a= 100 / "Elma"; //Sonuç NaN olarak tanımlanır.</p>
+<p>var b = 10 / "5"; // Sonuç 2 çıkacaktır.</p><br><br>
+<p>Bir sayısal değişkenin sayı içerip içermediğini isNaN() yöntemiyle öğreniriz. isNaN() yönteminin kullanımı aşağıdaki gibidir;</p>
+<p>var a= isNaN (3 / 0); //Sonuç yanlış(false) olarak tanımlanır.</p>
+<br><br>
+<h2>JavaScript Dizi İşlemleri</h2>
+<p>Dizi(array) bütün dillerde olduğu gibi JavaScript dilinde de birçok değişkeni içerisinde barındırır. Diziler köşeli parantez[] ile tanımlanır ve dizi elemanları virgül(,) ile ayrılır. Aşağıda örnek bir dizi tanımlayalım.</p>
+<p>var dizi1 = [1, 2, 3];</p>
+<p>var dizi2 = ["istanbul","ankara","izmir"];</p>
+<p>Yukarıda iki farklı türde dizi tanımladık. İlk dizimiz sayısal değerler barındırdığı için içerisinde bulunan ögeler tırnak(”) işareti ile ayrılmamıştır. İkinci dizi ise metin türünde bir dizi olduğu için  ögeler arasında tırnak(“) işaretine yer verilmiştir.
+
+Dizi oluştururken ögeler arasında karışıklığı önlemek için diziler aşağıdaki gibi tanımlanır.</p>
+<p>var sehir = {</p>
+<p>"İstanbul",</p>
+<p>"Ankara",</p>
+<p>"İzmir",};</p>
+<h3>Dizi Değerlerini Çağırmak</h3>
+<p>Dizi değerlerinin her birinin kendine özgü bir indis numarası bulunur. Bu indis numaralarını istenilen dizi ögesini çağırmak için kullanırız. Aşağıda bir dizi örneği tanımlayalım ve herhangi bir ögesini indis numarası ile çağıralım.</p>
+<p>var isimler=["Hakan","Hasan","Erkan","Samet"];</p>
+<p>var isim=isimler[1];</p>
+<p>// Ekran Çıktısı: Hasan</p><br><br>
+<h3>Diziye Değer Eklemek</h3>
+<p>Diziye değer eklemek için 2 farklı yöntem kullanılır. Aşağıda kod üzerinde bu yöntemleri daha detaylı inceleyelim:</p>
+<p>var dizi1=["Ahmet","Mehmet","Hakan"];</p>
+<p>// Yöntem 1
+dizi1.[dizi1.length]="Mustafa";</p>
+<p>// Yöntem 2
+dizi1[10]="Samet";</p> <br> <br>
+<p>Yukarıdaki örnekte ilk yöntemde length değeri 3’tür. 3 indis numarası boş olduğu için yeni eklenen öge 3 ögesinden sonra eklenir. İkinci yöntemde ise 10 değeri keyfi olarak tanımlanmıştır. 10 indis numarasına sahip değer boş olacağı için öge eklenirken hiçbir problem oluşturmaz.</p>
+</header>
+
+</body> 
+</html>

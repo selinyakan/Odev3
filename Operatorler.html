@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Operatörler</title>
+<style>
+
+body{
+margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    padding: 0;
+
+    width: 25%
+
+    background-color: #E0E0E0;
+
+    position: fixed;
+
+    height : 100%
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+
+    color: #000000;
+
+    padding: 16px 15px;
+ 
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #212121;
+   
+    color: white;
+}
+li a:hover:not(.active){
+    background-color: #EC407A;
+  
+    color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<ul>
+<li><a href='Odev.html'> JavaScript Giriş </a> </li>
+<li><a href='YazılımYapısı.html'>JavaScript Yazılım Yapısı</a></li>
+<li><a href='Degiskenler.html'>Değişkenler</a></li>
+<li><a class="active" href="#op">Operatörler</a></li>
+<li><a href='Aritmetik.html'>Aritmetik</a></li>
+<li><a href='VeriTipleri.html'>Veri Tipleri</a></li>
+<li><a href='Olaylar.html'>Olaylar</a></li>
+<li><a href='Stringler.html'>Stringler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+<li><a href='IfKosul.html'>İf Koşul Yapıları</a></li>
+<li><a href='Donguler.html'>Döngüler</a></li>
+<li><a href='TipDonusum.html'>Tip Dönüşümleri</a></li>
+<li><a href='Fonksiyon.html'>Fonksiyonlar</a></li>
+<li><a href='Calısma.html'>Çalışma Yapısı ve Genel Mimarisi</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px; height:1000px;">
+<h1>Operatörler</h1>
+<b>JavaScript dilinde değişkenler arası işlemler <i>operatörlerle</i> yapılır.</b>
+<h2><font color='#FF5722' > Aritmetik İşaretler </font></h2>
+<p>Sayısal veri içeren değişkenler arasında işlem yapmak için aşağıdaki operatör işaretlerini kullanırız.</p><br>
+<table border=”5″>
+<tr>
+<th>İŞARET</th>
+<th>ANLAMI</th>
+</tr>
+<tbody>
+<tr>
+<td>+</td>
+<td>Toplama </td>
+</tr>
+<tr>
+<td>-</td>
+<td>Çıkarma</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Çarpma</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Bölme</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Mod Alma</td>
+</tr>
+<tr>
+<td>++</td>
+<td>Sayıyı 1 artırma</td>
+</tr>
+<td>--</td>
+<td>Sayıyı 1 azaltma</td>
+</tr>
+</tbody>
+</table>
+<br><br>
+<h2><font color='#558B2F'>Değişkene Değer Atama</font></h2>
+<p>Değişkene değer atamak için (=) işareti kullanırız. Eşittir işaretinin sol tarafında yer vereceğimiz matematiksel işaret ile değer atayabiliriz.</p>
+<table border=”5″>
+<tr>
+<th>İŞARET</th>
+<th>ANLAMI</th>
+</tr>
+<tbody>
+<tr>
+<td>+=</td>
+<td>Kendiyle toplama </td>
+</tr>
+<tr>
+<td>-=</td>
+<td> Kendinden çıkarma</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>Kendiyle çarpma</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>Kendine bölme</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>Mod Alma</td>
+</tr>
+</tbody>
+</table><br><br>
+<h2><font color='#F4511E'>Eşittir Operatörü(=)</font></h2>
+<p>Bir değişkene değer atarken (=)eşittir operatörünü kullanırız. Örneğin x değişkenine 5 değerini verirken x=5; şeklinde yazılır.</p>
+<p>Eşittir operatörü aynı zamanda iki değişken arasında yapılan işlemin sonucunu yazmak için kullanılır.Örnek verecek olursak a=b+c; şeklinde yazabiliriz.</p>
+<h2><font color='#558B2F'>Metinsel Değerlerle İşlem Yapmak</font></h2>
+<p>İki metinsel veriyi (+) artı işareti ile birleştirebiliriz.</p>
+<p>var isim = "Selin";</p>
+<p>var soyisim = "Lifeacode";</p>
+<p>var isimsoyisim= isim + " " +soyisim;</p> <br> <br>
+<h2><font color='#FF5722' > Sayı ve Metin İfadeleri Arasında Birlikte İşlem Yapmak </font></h2>
+<p>Sayısal iki değer toplanırken sonuç sayısal olarak belirtilir ve belirtilen sayılar arasında belirtilen işlem yapılır. Bir metin ve bir sayısal değer arasında işlem yapılırsa sonuç metinsel olarak ifade edilir.</p>
+<p>a = 3 + 2 ;</p>
+<p>b = "3" + 2 ;</p>
+<p>"Mehmet" +1 ;</p>
+</header>
+</body>
+</html>
